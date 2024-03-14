@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add frame styles */
+        .frame {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: blue;">Registration form</h1>
+    <!-- Wrap the form in a frame -->
+    <div class="frame">
+        <form action="connect.php" method="post">
+            <label for="">First Name</label>
+            <input type="text" name="firstName" placeholder="First Name" required>
+            <label for="">Last Name</label>
+            <input type="text" name="lastName" placeholder="Last Name" required>
+
+            <label for="">Gender</label>
+            <label>
+                <input type="radio" name="gender" value="male">
+                Male
+            </label><br>
+            <label>
+                <input type="radio" name="gender" value="female">
+                Female
+            </label><br>
+            <label>
+                <input type="radio" name="gender" value="other">
+                Other
+            </label>
+
+            <label for="">Email</label>
+            <input type="text" name="email" placeholder="Email" required>
+
+            <label for="">Password</label>
+            <input type="password" name="password" placeholder="Password" required>
+
+            <label for="">Phone Number</label>
+            <input type="tel" name="phoneNumber" placeholder="Phone Number" required>
+
+            <button type="submit">Submit</button>
+            <a href="login.html">Already have an account</a>
+        </form>
+    </div>
+</body>
+</html>
